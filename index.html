@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity Web Player | GoGoBallClient</title>
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
   </head>
-  <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <canvas id="unity-canvas" width=1080 height=1920 tabindex="-1" style="width: 1080px; height: 1920px; background: #231F20"></canvas>
     <script src="Build/GoGoBallClient.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -30,7 +30,7 @@
         dataUrl: "Build/GoGoBallClient.data",
         frameworkUrl: "Build/GoGoBallClient.framework.js",
         codeUrl: "Build/GoGoBallClient.wasm",
-        streamingAssetsUrl: "StreamingAssets",
+        streamingAssetsUrl: "",
         companyName: "EverideaInteractive",
         productName: "GoGoBallClient",
         productVersion: "0.1.0",
